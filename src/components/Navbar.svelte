@@ -11,12 +11,12 @@
   <div class="flex px-10 sm:px-20 text-base whitespace-nowrap space-x-5 font-semibold overflow-x-scroll scrollbar-hide">
     {#each Object.entries(requests) as [key, request]}
       <div>
-        <h2
+        <button
           on:click={() => handleClick(key)}
           class="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-yellow-700"
         >
           {request.title}
-        </h2>
+      </button>
       </div>
     {/each}
   </div>
