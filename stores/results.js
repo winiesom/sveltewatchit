@@ -7,9 +7,9 @@ export const isFetched = writable(false);
 
 const baseApiUrl = 'https://api.themoviedb.org/3/';
 
-export const fetchMovies = async (apiUrl, totalPages = 10) => {
+export const fetchMovies = async (apiUrl, totalPages = 1) => {
   try {
-    const resultsPerPage = 100;
+    const resultsPerPage = 10;
     const allMovieResults = [];
 
     // Fetch multiple pages in parallel using Promise.all

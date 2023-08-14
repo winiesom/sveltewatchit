@@ -4,7 +4,7 @@ import App from "./App.svelte";
 import * as Sentry from "@sentry/svelte";
 
 Sentry.init({
-  dsn: "https://f831f8253d748b935632b9ff0ba71739@o4505703098286080.ingest.sentry.io/4505703727562752",
+  dsn: "https://38cbc4863d691da7628a7a8df772e41b@o4505703098286080.ingest.sentry.io/4505703852539904",
   integrations: [
     new Sentry.BrowserTracing({
       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
