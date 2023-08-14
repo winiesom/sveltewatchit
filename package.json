@@ -17,6 +17,8 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@sentry/svelte": "^7.64.0",
+    "@sentry/vite-plugin": "^2.6.2",
     "svelte-material-icons": "^3.0.5",
     "svelte-routing": "^2.0.0",
     "tailwind-scrollbar-hide": "^1.1.7"
