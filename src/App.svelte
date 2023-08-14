@@ -11,9 +11,12 @@
   import { requests } from "../utils/requests";
 
   // Fetch movies on component mount
-  onMount(async () => {
-    await fetchMovies();
-    setContext('fetchMovies', fetchMovies); // Set fetchMovies function in context for use in other components
+  onMount(async (genreKey) => {
+    if(genreKey && requests[genreKey]) {
+      const apiUrl = requests[genreKey].url;
+      await fetchMovies(apiUrl);
+    }
+    // setContext('fetchMovies', fetchMovies); // Set fetchMovies function in context for use in other components
   });
 
   let movies = [];

@@ -1,5 +1,6 @@
 import "./app.postcss";
 import App from "./App.svelte";
+// @ts-ignore
 import * as Sentry from "@sentry/svelte";
 
 Sentry.init({
