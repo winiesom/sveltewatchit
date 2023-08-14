@@ -7,7 +7,7 @@ Sentry.init({
   integrations: [
     new Sentry.BrowserTracing({
       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-      tracePropagationTargets: ["localhost", "https://svelte-watchit.netlify.app/"],
+      tracePropagationTargets: ["https://svelte-watchit.netlify.app/"],
     }),
     new Sentry.Replay(),
   ],
