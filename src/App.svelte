@@ -1,6 +1,6 @@
 <!-- App.svelte -->
 <script>
-  import { onMount, setContext } from 'svelte';
+  import { onMount } from 'svelte';
   import { movieResults, fetchMovies } from '../stores/results.js';
 
   // Import components
@@ -16,7 +16,6 @@
       const apiUrl = requests[genreKey].url;
       await fetchMovies(apiUrl);
     }
-    // setContext('fetchMovies', fetchMovies); // Set fetchMovies function in context for use in other components
   });
 
   let movies = [];

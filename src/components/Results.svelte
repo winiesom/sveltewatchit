@@ -23,9 +23,6 @@
         // If the genreKey does not exist in requests or not provided, default to fetchTrending
         apiUrl = `${requests.fetchTrending.url}`;
       }
-
-      console.log("Genre Key:", genreKey);
-    console.log("API URL:", apiUrl);
   
       // Check if movies have already been fetched
       if (!$isFetched) {

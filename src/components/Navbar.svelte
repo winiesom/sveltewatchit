@@ -1,7 +1,6 @@
 <!-- Navbar.svelte -->
 <script>
   import { requests } from "../../utils/requests.js";
-
   const handleClick = (genreKey) => {
     window.location.href = `/?genre=${genreKey}`;
   };
@@ -13,8 +12,7 @@
       <div>
         <button
           on:click={() => handleClick(key)}
-          class="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-yellow-700"
-        >
+          class="cursor-pointer transition duration-100 transform hover:scale-125 hover:text-white active:text-yellow-700">
           {request.title}
       </button>
       </div>

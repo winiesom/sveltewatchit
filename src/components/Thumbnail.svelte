@@ -14,6 +14,7 @@
     height="500"
     width="800"
     alt="{movieProp.title}"
+    loading="lazy"
   />
 
   <div class="p-2">
